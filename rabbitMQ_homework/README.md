@@ -1,4 +1,4 @@
-rganizacja zimowej wyprawy górskiej lub wysokogórskiej to trudne zadanie, w szczególności w zakresie zebrania odpowiedniego sprzętu. Niektóre ekipy biorą ze sobą tlen, inne nie dopuszczają takiej możliwości; jedni turyści korzystają z zestawu puchowej odzieży, inni wolą morsować. Niezależnie od potrzeb, obsługa zleceń na sprzęt do wypraw górskich to niełatwe zadanie, które wymaga zapewnienia odpowiedniej komunikacji.
+Organizacja zimowej wyprawy górskiej lub wysokogórskiej to trudne zadanie, w szczególności w zakresie zebrania odpowiedniego sprzętu. Niektóre ekipy biorą ze sobą tlen, inne nie dopuszczają takiej możliwości; jedni turyści korzystają z zestawu puchowej odzieży, inni wolą morsować. Niezależnie od potrzeb, obsługa zleceń na sprzęt do wypraw górskich to niełatwe zadanie, które wymaga zapewnienia odpowiedniej komunikacji.
 
 Zaimplementuj, z użyciem RabbitMQ, system pośredniczący pomiędzy ekipami zmierzającymi na wyprawę górską (Ekipa), a dostawcami sprzętu górskiego (Dostawca). Ekipy mogą zamawiać różne typy sprzętu, natomiast każdy Dostawca posiada swoją listę dostępnych u niego typów sprzętu.
 
@@ -49,4 +49,7 @@ Zadanie należy zaprezentować w następującym scenariuszu:
 - w ramach testów systemu przyjmujemy, że zlecenia obsługiwane są natychmiast
 
 - każda operacja (wysłanie i odebranie zlecenia) powinna być wypisana
+
+
+<img src="schemat.png" alt="schema" />
 
