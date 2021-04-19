@@ -1,28 +1,11 @@
-Napisać aplikację typu chat (5 pkt.)
-– Klienci łączą się serwerem przez protokół TCP
-– Serwer przyjmuje wiadomości od każdego
-klienta i rozsyła je do pozostałych (wraz z
-id/nickiem klienta)
-– Serwer jest wielowątkowy – każde
-połączenie od klienta powinno mieć swój
-wątek
-– Proszę zwrócić uwagę na poprawną obsługę
-wątków
-
-• Dodać dodatkowy kanał UDP (3 pkt.)
-– Serwer oraz każdy klient otwierają dodatkowy
-kanał UDP (ten sam numer portu jak przy TCP)
-– Po wpisaniu komendy ‘U’ u klienta przesyłana
-jest wiadomość przez UDP na serwer, który
-rozsyła ją do pozostałych klientów
-– Wiadomość symuluje dane multimedialne
-(można np. wysłać ASCII Art)
-
-
-• Zaimplementować powyższy punkt w wersji
-multicast (2 pkt.)
-– Nie zamiast, tylko jako alternatywna opcja do
-wyboru (komenda ‘M’)
-– Multicast przesyła bezpośrednio do wszystkich
-przez adres grupowy (serwer może, ale nie
-musi odbierać)
+• Stworzyć aplikację w środowisku Zookeeper (Java, …) która
+wykorzystując mechanizm obserwatorów (watches) umożliwia
+następujące funkcjonalności:
+– Jeśli tworzony jest znode o nazwie „z” uruchamiana jest zewnętrzna
+aplikacja graficzna (dowolna, określona w linii poleceń),
+– Jeśli jest kasowany „z” aplikacja zewnętrzna jest zatrzymywana,
+– Każde dodanie potomka do „z” powoduje wyświetlenie graficznej
+informacji na ekranie o aktualnej ilości potomków.
+• Dodatkowo aplikacja powinna mieć możliwość wyświetlenia całej
+struktury drzewa „z”.
+• Stworzona aplikacja powinna działać w środowisku „Replicated
