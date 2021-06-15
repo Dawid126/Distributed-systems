@@ -6,6 +6,8 @@ aplikacja graficzna (dowolna, określona w linii poleceń),
 – Jeśli jest kasowany „z” aplikacja zewnętrzna jest zatrzymywana,
 – Każde dodanie potomka do „z” powoduje wyświetlenie graficznej
 informacji na ekranie o aktualnej ilości potomków.
+
 • Dodatkowo aplikacja powinna mieć możliwość wyświetlenia całej
 struktury drzewa „z”.
-• Stworzona aplikacja powinna działać w środowisku „Replicated
+
+• Stworzona aplikacja powinna działać w środowisku „Replicated Zookeper"
