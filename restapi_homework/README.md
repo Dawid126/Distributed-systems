@@ -1,3 +1,5 @@
+Link do aplikacji na heroku: http://dawid-bialka-rest.herokuapp.com/
+
 Temat
 Celem zadania jest napisanie prostej aplikacji webowej rozszerzającej funkcjonalność  wybranego otwartego serwisu udostępniającego REST API. Stworzyć macie Państwo serwis, który:
 
