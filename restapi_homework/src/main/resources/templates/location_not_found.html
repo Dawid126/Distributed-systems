@@ -1,0 +1,11 @@
+<!DOCTYPE HTML>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+    <title>Location not found</title>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type"/>
+</head>
+<body>
+<p th:text="'Location not found : ' + ${locationName}"></p>
+<a href="/statistics/weather/weather-data-for-time-period-request-form">Try again</a><br/>
+</body>
+</html>

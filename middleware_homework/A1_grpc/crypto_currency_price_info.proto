@@ -1,0 +1,41 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "generated";
+
+message CryptoCurrencyPriceInfo
+{
+  string cryptoName = 1;
+  CryptoPriceVolatility priceVolatility = 2;
+  Recommendation recommendation = 3;
+  repeated PriceOnStockExchange priceOnStockExchange = 4;
+
+  message PriceOnStockExchange {
+    string stockExchangeName = 1;
+    double price = 2;
+  }
+
+  enum CryptoPriceVolatility {
+    VERY_HIGH = 0;
+    HIGH = 1;
+    MEDIUM = 2;
+    LOW = 3;
+    VERY_LOW = 4;
+  }
+
+  enum Recommendation {
+    SELL = 0;
+    HOLD = 1;
+    BUY = 2;
+  }
+}
+
+message CryptoCurrencyPriceRequest
+{
+  string cryptoName = 1;
+  string clientID = 2;
+}
+
+service CryptoCurrencyPriceService {
+  rpc SubscribeOnCryptoCurrencyPriceInfo (CryptoCurrencyPriceRequest) returns (stream CryptoCurrencyPriceInfo) {}
+}

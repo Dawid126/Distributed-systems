@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+    <title>Weather data</title>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type"/>
+</head>
+<body>
+<div>
+
+<h1>Result</h1>
+<p th:text="'City: ' + ${city}"></p>
+<p th:text="'Time period: ' + ${timePeriod}"></p>
+
+<p th:text="'Minimum temperature: ' + ${minimumTemperature} + ' ' + ${temperatureUnit}"></p>
+<p th:text="'Average temperature: ' + ${averageTemperature} + ' ' + ${temperatureUnit}"></p>
+<p th:text="'Maximum temperature: ' + ${maximumTemperature} + ' ' + ${temperatureUnit}"></p>
+<p></p>
+
+<p th:text="'Minimum air pressure: ' + ${minimumAirPressure} + ' ' + ${airPressureUnit}"></p>
+<p th:text="'Average air pressure: ' + ${averageAirPressure} + ' ' + ${airPressureUnit}"></p>
+<p th:text="'Maximum air pressure: ' + ${maximumAirPressure} + ' ' + ${airPressureUnit}"></p>
+<p></p>
+
+<p th:text="'Minimum wind: ' + ${minimumWind} + ' ' + ${windUnit}"></p>
+<p th:text="'Average wind: ' + ${averageWind} + ' ' + ${windUnit}"></p>
+<p th:text="'Maximum wind: ' + ${maximumWind} + ' ' + ${windUnit}"></p>
+<p></p>
+
+<p th:text="'Minimum humidity: ' + ${minimumHumidity} + ' ' + ${humidityUnit}"></p>
+<p th:text="'Average humidity: ' + ${averageHumidity} + ' ' + ${humidityUnit}"></p>
+<p th:text="'Maximum humidity: ' + ${maximumHumidity} + ' ' + ${humidityUnit}"></p>
+<p></p>
+
+<p th:text="'Minimum visbility: ' + ${minimumVisibility} + ' ' + ${visibilityUnit}"></p>
+<p th:text="'Average visbility: ' + ${averageVisibility} + ' ' + ${visibilityUnit}"></p>
+<p th:text="'Maximum visbility: ' + ${maximumVisibility} + ' ' + ${visibilityUnit}"></p>
+<p></p>
+
+<a href="/">Go back to services list</a><br/>
+
+</body>
+</html>
